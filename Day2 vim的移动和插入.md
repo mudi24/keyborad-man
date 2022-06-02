@@ -11,7 +11,7 @@
   - `g`+`_` 移动到本行最后一个不是 blank 字符的位置
 - 默认移动快捷键不好用，这里我们修改一下
   - 在 VS Code 中按下`command` + `shift` + `p`，选择 setting.json 文件
-    - 添加一下配置
+    - 添加以下配置
     ```json
      "vim.normalModeKeyBindings":[
         {"before": ["H"], "after": ["^"]},

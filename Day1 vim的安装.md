@@ -42,7 +42,7 @@ const bb = 11
 ### 在VS Code中把ESC键映射到`j`+`k`
 
 * 在 VS Code 中按下`command` + `shift` + `p`，选择setting.json 文件
-* 添加一下配置
+* 添加以下配置
 ```json
 "vim.insertModeKeyBindings":[
     {"before": ["j","k"], "after": ["<Esc>"]}
