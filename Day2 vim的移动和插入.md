@@ -34,3 +34,8 @@
 * `dd` 删除当前行
 
 > 这里的复制粘贴与默认的`command` + `c` 或 `command` + `v`不冲突
+
+### 在vim中修改上下左右按键
+
+* 需要先下载一个软件：https://karabiner-elements.pqrs.org/
+* 把上下左右映射为 `ctrl` + `k`/`j`/`h`/`l`

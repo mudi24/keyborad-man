@@ -33,7 +33,7 @@ const bb = 11
 * `vim test` 有test文件则进入test文件，没有test文件则创建test文件
 * `:wq` 写入内容并退出
 * `cat test.txt` 查看当前test文件的内容
-* `:q!` 强制退出(不退保存当前对文件的修改)
+* `:q!` 强制退出(不保存当前对文件的修改)
 
 ### control 和 caps lock 调换位置
 
