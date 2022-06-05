@@ -40,4 +40,4 @@
 * 需要先下载一个软件：https://karabiner-elements.pqrs.org/
 * 把上下左右映射为 `control` + `k`/`j`/`h`/`l`
 
-[image](./images/Day2.png)
+![image](./images/Day2.png)

@@ -52,7 +52,7 @@ const bb = 11;
 ```
 
 > 或者下载一个软件：https://karabiner-elements.pqrs.org/
-> [image](../images/Day1.png)
+![image](../images/Day1.png)
 
 ### 在 vim 中快速移动
 
