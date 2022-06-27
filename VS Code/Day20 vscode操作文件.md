@@ -1,4 +1,4 @@
-## Day 20A
+## Day 20
 
 ## vscode 操作文件
 
