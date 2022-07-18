@@ -9,7 +9,7 @@
 - 切换屏幕
   - `command` + `options` + `方向键`
   - `command` + `[` / `]`
-- `ctrl` + `command` + `方向键` 调整窗            口
+- `ctrl` + `command` + `方向键` 调整窗口
 
 ### 标签
 
