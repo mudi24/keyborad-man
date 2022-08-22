@@ -1,0 +1,164 @@
+{
+"vim.insertModeKeyBindings":[
+    {"before": ["j","k"], "after": ["<Esc>"]}
+],
+
+"vim.normalModeKeyBindingsNonRecursive":[
+  // 使用f键代替s键
+   {
+        "before": ["f"],
+        "after": ["s"]
+    },
+    {
+        "before": ["F"],
+        "after": ["S"]
+    },
+    {
+        "before": ["s"],
+        "after": ["c" , "l"]
+    },
+    {
+        "before": ["S"],
+        "after": ["^" , "C"]
+    },
+  {
+    "before":["<Space>",";"],
+    "commands":["vspacecode.space"]
+  }, 
+  // 使用hocus pocus 插件创建函数
+  {
+    "before":["<Space>","f","f"],
+    "commands":["hocusPocus.createFunction"]
+  }, 
+  // 使用hocus pocus 插件创建变量
+  {
+    "before":["<Space>","v","v"],
+    "commands":["hocusPocus.createVariable"]
+  }, 
+  {
+    "before":["<Space>","g","g"],
+    "commands":["workbench.view.scm"]
+  }, 
+  {
+    "before":["<Space>","g","s"],
+    "commands":["git.stage"]
+  }, 
+  {
+    "before":["<Space>","g","c"],
+    "commands":["git.commit"]
+  }, 
+  {
+    "before":["<Space>","g","d","f"],
+    "commands":["git.openChange"]
+  }, 
+  {
+    "before":["<Space>","g","u"],
+    "commands":["git.unstage"]
+  }, 
+  {
+    "before":["<Space>","g","c","l"],
+    "commands":["git.clean"]
+  }, 
+  {
+    "before":["<Space>","n","d"],
+    "commands":["explorer.newFolder"]
+  }, 
+  {
+    "before":["<Space>","n","f"],
+    "commands":["explorer.newFile"]
+  }, 
+  // format document 格式化
+  {
+    "before":["<Leader>","f","d"],
+    "commands":["editor.action.formatDocument"]
+  }, 
+  // rename 重命名
+  {
+    "before":["<Space>", "r", "n"],
+    "commands":["editor.action.rename"]
+  },
+  // 向下复制行
+  {
+    "before":["<Leader>", "c", "j"],
+    "commands":["editor.action.copyLinesDownAction"]
+  },
+  // 向上复制行
+  {
+    "before":["<Leader>", "c", "k"],
+    "commands":["editor.action.copyLinesUpAction"]
+  },
+  // 折叠代码并且调整光标位置
+  {
+    "before":["<Space>","["],
+    "commands":[
+      {
+        "command":"editor.fold"
+      },
+      {"command": "vim.remap",
+        "args":{
+          "after": ["$", "%"]
+        }
+      }
+    ]
+  },
+  // 展示代码
+  {
+    "before":["<Space>","]"],
+    "commands":[{
+      "command":"editor.unfold"
+    }]
+  }
+],
+// 可视化模式用f键代替了s键
+"vim.visualModeKeyBindingsNonRecursive":[ // 非递归
+    {
+        "before": ["f"],
+        "after": ["s"]
+    },
+    // 可视化模式下不支持 S
+    // {
+    //     "before": ["F"],
+    //     "after": ["S"]
+    // },
+],
+"vim.normalModeKeyBindings":[
+    {"before": ["H"], "after": ["^"]},
+    {"before": ["L"], "after": ["g","_"]},
+    // 注意：这里"g"和"_"的顺序不能变，把"g"放后面会导致映射失败
+    {"before": ["J"], "after": ["5","j"]},
+    {"before": ["K"], "after": ["5","k"]},
+],
+"vim.operatorPendingModeKeyBindings":[
+  //  保证vim在按下操作符时可以使用H/L向左右移动
+    {"before": ["H"], "after": ["^"]},
+    {"before": ["L"], "after": ["g","_"]},
+],
+"vim.operatorPendingModeKeyBindingsNonRecursive":[ // 非递归
+    {
+        "before": ["f"],
+        "after": ["z"]
+    },
+    {
+        "before": ["F"],
+        "after": ["Z"]
+    },
+],
+  // 开启 easymotion
+  "vim.easymotion": true,
+  // 修改 <leader> 对应的键位
+  "vim.leader": "<Space>",
+  // 开启sneak
+  "vim.sneak": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-f>": false,
+    "<C-n>": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+  },
+}
